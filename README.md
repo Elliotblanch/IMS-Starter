@@ -5,17 +5,22 @@ A project creating a basic Inventory Management System (IMS)
 
 ## Getting Started
 
-* Fork repository https://github.com/Elliotblanch/IMS-Starter & clone to local machine
+* Fork repository https://github.com/Elliotblanch/IMS-Starter & clone to local machine, following the commands provided on github
 * Open Eclipse IDE
 * Go to 'file' -> 'Open projects from file system...' & navigate to the project 'IMS-Starter' through the directory command
 
 ### Prerequisites
 
 **Required**
-Java
-Eclipse IDE
-MySQL
-
+ Java 8 (https://www.oracle.com/java/technologies/downloads/#java8)
+Guide on how to install Java provided by Oracle (https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
+- MySQL 8 (https://dev.mysql.com/downloads/windows/installer/8.0.html)
+Guide from MySQL site (https://dev.mysql.com/doc/refman/8.0/en/installing.html)*
+* Note that we need MySQL Server and MySQL Workbench for hosting a database and running queries
+- Eclipse IDE (https://www.eclipse.org/downloads/)
+Guide on installation from the Eclipse website (https://www.eclipse.org/downloads/packages/installer)
+- Maven (https://maven.apache.org/download.cgi)
+Guide on installation for Maven provided on their website (https://maven.apache.org/install.html)
 
 
 **Desirable**
@@ -23,25 +28,6 @@ SQL Workbench
 Git Bash
 VS Code
 
-
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
@@ -57,26 +43,25 @@ Unit tests inspect the methods found in the DAO files, which deal the data held 
 
 These tests will automatically run when you try to build the app with Maven.
 
+To run these tests manually, right click on src/test/java/com.qa.ims/persistence/dao and click 'run as... -> Junit Test'
+
 ### Integration Tests 
 Integration tests inspect the controller classes, checking for any flaws in the user interface.
 
 These tests will automatically run when you try to build the app with Maven.
 
-```
-Give an example
-```
+To run these tests manually, right click on src/test/java/com.qa.ims/cotrollers and click 'run as... -> Junit Test'
 
-### And coding style tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+* Right click on your project file in the package explorer
+
+* Click 'run as -> maven build...'
+
+* In the goals field, enter 'clean build', then press run
+
 
 ## Built With
 
